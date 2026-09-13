@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
+.atl/
+
+# assets-src/ IS versioned on purpose: it holds the only copy of the edited
+# artwork (the lettering, the cropped balloons, the two bears) that
+# `npm run images` compresses into public/assets/*.webp.
+*.zip
