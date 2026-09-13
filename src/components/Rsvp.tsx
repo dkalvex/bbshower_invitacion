@@ -93,7 +93,7 @@ export function Rsvp() {
         <h2 className="titulo-imagen rsvp__titulo">
           <img src={asset('te-esperamos.webp')} alt="Te esperamos" />
         </h2>
-        <p className="rsvp__plazo">Por favor confirma antes del 31 de octubre.</p>
+        <p className="rsvp__plazo">Confirmar antes del 20 de octubre.</p>
 
         {enviado ? (
           <div className="rsvp__gracias">

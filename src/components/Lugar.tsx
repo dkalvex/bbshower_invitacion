@@ -26,7 +26,7 @@ export function Lugar() {
           <h2 className="titulo-imagen lugar__titulo">
             <img src={asset('club-nativos.webp')} alt="Club Nativos" />
           </h2>
-          <p className="lugar__subtitulo">Sábado 7 de noviembre · 4:00 de la tarde</p>
+          <p className="lugar__subtitulo">Sábado 7 de noviembre · 4:00 p.m.</p>
         </div>
 
         <div className="lugar__columnas">
@@ -41,7 +41,7 @@ export function Lugar() {
             </div>
             <div>
               <p className="lugar__dato-etiqueta">Hora de llegada</p>
-              <p className="lugar__dato-texto">4:00 p.m. La revelación es a las 6:00 p.m.</p>
+              <p className="lugar__dato-texto">4:00 p.m.</p>
             </div>
             <div>
               <p className="lugar__dato-etiqueta">Vestimenta</p>
