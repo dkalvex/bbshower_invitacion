@@ -38,7 +38,7 @@ export function MarcoArco({ children, className, decoracion = 'nubes' }: Props) 
             alt=""
             className="marco-arco__nube marco-arco__nube--baja"
           />
-          <img src={asset('oso-lazo.webp')} alt="" className="marco-arco__oso" />
+          <img src={asset('oso-marco.webp')} alt="" className="marco-arco__oso" />
         </>
       )}
 

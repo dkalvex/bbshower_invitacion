@@ -33,6 +33,7 @@ const TARGET_WIDTH = {
   'chupo.png': 400,
   'tetero.png': 280,
   'globo-aerostatico.png': 420,
+  'oso-marco.png': 340,
   'foto-pareja.jpeg': 520,
 }
 
