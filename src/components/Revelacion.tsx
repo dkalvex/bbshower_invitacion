@@ -118,7 +118,7 @@ export function Revelacion() {
         </p>
 
         <div className="revelacion__vestimenta">
-          <span className="chip-vestimenta">Vestimenta en blanco</span>
+          <span className="chip-vestimenta">Dress code blanco</span>
         </div>
       </div>
 
