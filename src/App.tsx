@@ -3,6 +3,7 @@ import { Revelacion } from './components/Revelacion'
 import { Lugar } from './components/Lugar'
 import { Rsvp } from './components/Rsvp'
 import { Globos } from './components/Globos'
+import { Musica } from './components/Musica'
 import { useScrollProgress } from './hooks/useScrollProgress'
 
 export function App() {
@@ -15,6 +16,7 @@ export function App() {
       <Lugar />
       <Rsvp />
       <Globos />
+      <Musica />
     </>
   )
 }

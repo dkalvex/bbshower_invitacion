@@ -1142,3 +1142,77 @@ img {
   opacity: 0.65;
   animation: flotar 10s ease-in-out infinite;
 }
+
+/* ============================================================
+   MÚSICA
+   ============================================================ */
+
+/*
+ * Floating audio toggle. It sits above the balloon layer (z-index 6) so the
+ * tap always lands on the button, and it is anchored to the window rather
+ * than to a section so it follows the reader down the page.
+ */
+.musica {
+  position: fixed;
+  right: clamp(0.75rem, 3vw, 1.5rem);
+  bottom: clamp(0.75rem, 3vw, 1.5rem);
+  z-index: 7;
+
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+
+  color: var(--color-rose-dark);
+  background: var(--color-surface);
+  border: 1px solid var(--color-surface-border);
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgb(74 64 56 / 0.16);
+  cursor: pointer;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.musica svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.musica:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgb(74 64 56 / 0.22);
+}
+
+.musica:focus-visible {
+  outline: 2px solid var(--color-rose);
+  outline-offset: 3px;
+}
+
+/* A slow breath while the song plays, so the button reads as active. */
+.musica--sonando {
+  animation: musica-latido 2.4s ease-in-out infinite;
+}
+
+@keyframes musica-latido {
+  0%,
+  100% {
+    box-shadow: 0 4px 14px rgb(74 64 56 / 0.16);
+  }
+  50% {
+    box-shadow:
+      0 4px 14px rgb(74 64 56 / 0.16),
+      0 0 0 6px rgb(183 128 126 / 0.14);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .musica,
+  .musica--sonando {
+    animation: none;
+    transition: none;
+  }
+}
