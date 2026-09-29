@@ -116,10 +116,6 @@ export function Revelacion() {
           Ni nosotros lo sabemos todavía. El sobre permanece cerrado hasta la tarde del 7 de
           noviembre, y lo abriremos contigo, en el Club Nativos.
         </p>
-
-        <div className="revelacion__vestimenta">
-          <span className="chip-vestimenta">Dress code blanco</span>
-        </div>
       </div>
 
     </section>
