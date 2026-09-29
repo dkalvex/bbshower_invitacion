@@ -1,7 +1,7 @@
 import { asset } from '../lib/asset'
 
-const MAPA_EMBED = 'https://www.google.com/maps?q=Club+Nativos&output=embed'
-const MAPA_ENLACE = 'https://www.google.com/maps/search/?api=1&query=Club+Nativos'
+const MAPA_EMBED = 'https://www.google.com/maps?q=6.136829,-75.568427&z=16&output=embed'
+const MAPA_ENLACE = 'https://maps.google.com/?cid=5405035496836626537'
 
 export function Lugar() {
   return (
@@ -42,10 +42,6 @@ export function Lugar() {
             <div>
               <p className="lugar__dato-etiqueta">Hora de llegada</p>
               <p className="lugar__dato-texto">4:00 p.m.</p>
-            </div>
-            <div>
-              <p className="lugar__dato-etiqueta">Vestimenta</p>
-              <p className="lugar__dato-texto">Elegante, en blanco.</p>
             </div>
 
             <a
