@@ -116,6 +116,10 @@ export function Revelacion() {
           Ni nosotros lo sabemos todavía. El sobre permanece cerrado hasta la tarde del 7 de
           noviembre, y lo abriremos contigo, en el Club Nativos.
         </p>
+
+        <div className="revelacion__sobres">
+          <span className="chip-sobres">Lluvia de sobres</span>
+        </div>
       </div>
 
     </section>
