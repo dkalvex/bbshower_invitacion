@@ -53,10 +53,6 @@ export function Hero() {
         </div>
 
         <Contador cuenta={cuenta} />
-
-        <a href="#rsvp" className="boton-relleno hero__cta">
-          Confirmar asistencia
-        </a>
       </div>
     </section>
   )
