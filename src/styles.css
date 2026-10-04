@@ -105,6 +105,8 @@ img {
   position: relative;
   overflow: hidden;
   min-height: 100svh;
+  /* dvh tracks the in-app browser chrome, so no next-section strip peeks in. */
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -655,8 +657,12 @@ img {
 /* ============================================================
    Revelación
    ============================================================ */
+/* Bottom padding clears the bear group: its offset + the balloons' lift +
+   the balloons' height (see .revelacion__suelo / __globos) + breathing room. */
 .revelacion {
-  padding: clamp(44px, 7vh, 90px) 24px 22svh;
+  --rev-pad-top: clamp(44px, 7vh, 90px);
+  --rev-pad-bottom: calc(6svh + 7.4svh + min(20svh, 20.8vw) + clamp(20px, 4svh, 40px));
+  padding: var(--rev-pad-top) 24px var(--rev-pad-bottom);
 }
 
 .revelacion__nube-sup {
@@ -751,7 +757,9 @@ img {
 
 .revelacion__marco {
   margin-top: max(-1.6vh, -3.9vw, -20px);
-  height: min(42svh, 400px);
+  /* The video absorbs the squeeze so the section fits one screen: what is
+     left after the paddings and ~260px of label, title and copy. */
+  height: clamp(220px, calc(100svh - var(--rev-pad-top) - var(--rev-pad-bottom) - 260px), min(42svh, 400px));
   aspect-ratio: 9 / 16;
   width: auto;
   max-width: min(86vw, 286px);
